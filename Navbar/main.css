@@ -1,0 +1,75 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.navbar_header{
+   background-color: #545454;
+   display: flex;
+   justify-content: space-between;
+   padding: 0.5rem 1rem;
+   border-bottom: 0.3rem solid #6baa78;
+   
+}
+
+.navbar_btn{
+   align-self: center;
+   border: 5px solid #6baa78;
+   cursor: pointer;
+}
+
+.bar1, .bar2, .bar3{
+   width: 30px;
+   height: 5px;
+   margin: 0.5rem;
+   background-color: #6baa78;
+   transition: all .5s ease;
+}
+
+.change .bar1{
+   transform: rotate(-45deg) translate(-10px, 10px);
+}
+.change .bar2{
+   opacity: 0;
+}
+.change .bar3{
+   transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.navbar_links{
+   list-style-type: none;
+   transition: all .5s ease;
+   height: 0;
+   overflow: hidden;
+   
+}
+
+.navbar_collapse{
+   height: 240px;
+}
+
+.navbar_single_link{
+   display: block;
+   background-color: #69747c;
+   padding: 1rem;
+   font-size: 1.5rem;
+   text-decoration: none;
+   color: #fff;
+   transition: all .5s ease;
+}
+
+.navbar_single_link:hover{
+   padding-left: 1.5rem;
+   background-color: #545454;
+   
+}
+
+header{
+   min-height: calc(100vh - 60px);
+   background-image: url('images/nasa-Q1p7bh3SHj8-unsplash.jpg');
+   background-size: cover;
+   object-fit: cover;
+   background-position: center;
+
+}
