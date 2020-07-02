@@ -1,0 +1,59 @@
+body{
+   margin: 0;
+   padding: 0;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url('images/background.jpg');
+   background-size: cover;
+   object-fit: cover;
+   background-position: center;
+}
+
+.images{
+   background-color: mediumaquamarine;
+   flex: 0 0 80%;
+   min-height: 70vh;
+   background-image: url(images/bcg-0.jpg);
+   background-size: cover;
+   object-fit: cover;
+   background-position: center;
+   box-shadow: 5px 10px black;
+   position: relative;
+}
+
+.btn{
+   display: inline-block;
+   background-color: #fff;
+   color: #000;
+   border: 3px solid green;
+   border-radius: 20%;
+   box-shadow: 2px 5px black;
+   outline: none;
+   cursor: pointer;
+}
+
+.prevBtn{
+   position: absolute;
+   top: 50%;
+   left: 0;
+   transform: translate(-50%,-50%);
+}
+
+.nextBtn{
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translate(50%,-50%);
+}
+
+.btn:active{
+   background-color: grey;
+   box-shadow: 1px 1px grey;
+}
+
+.btn:hover{
+   background-color: green;
+   color: #fff;
+}
